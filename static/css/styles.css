@@ -183,3 +183,219 @@ body {
     /* border: 1px solid black; */
     font-size: 13px;
 }
+
+/* About Config Start */
+.about-section {
+    width: 1140px;
+    padding: 0px 0px 0px;
+    /* height: 100vh; */
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.title-section {
+    height: 227px;
+    background-color: aliceblue;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.title-section h1 {
+    position: relative;
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    z-index: 999;
+}
+
+.title-bg {
+    position: absolute;
+    z-index: 1;
+    color: blue;
+    margin: -31px auto auto -50px;
+    font-size: 50px;
+    /* border: 1px solid red; */
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.row {
+    display: flex;
+}
+
+.col-xl-6 {
+    width: 50%;
+    height: 350px;
+    /* border: 1px solid red; */
+}
+
+.col-xl-6>.row {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-list>* {
+    width: 50%;
+    height: 40px;
+    /* border: 1px solid red; */
+    list-style-type: none;
+}
+
+.fa-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: cornflowerblue;
+}
+
+.col-lg-7 {
+    margin: auto;
+    display: flex;
+    height: 330px;
+    flex-wrap: wrap;
+}
+
+.col-lg-7>* {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-stats {
+    gap: 10px;
+    background-color: cornflowerblue;
+    display: flex;
+    width: 255px;
+    padding: 10px;
+    height: 150px;
+    /* border: 1px solid red; */
+}
+
+.col-12-exp {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0px;
+    /* border: 1px solid red; */
+}
+
+
+/* !! Skill Config */
+.skill-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-card {
+    width: calc(23% - 20px);
+    /* Adjust the width and spacing as needed */
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skill-card i {
+    font-size: 60px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.skill-card h6 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-card .percentage {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* !!!  Experience Config */
+
+.experience-container {
+    display: flex;
+}
+
+.experience-column {
+    flex: 1;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 45px;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content .time {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.experience-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.liner {
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #333;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+/* About Config End */

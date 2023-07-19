@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="/static/css/styles.css">
     <!-- <script src="index.js" defer></script> -->
 
-    <title>Site</title>
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
                 </li>
 
                 <li>
-                    <a href="portfolio.html">
+                    <a href="{{ url_for('portfolio') }}">
                         <button class="nav-btn">
                             <h2 class="link-title">Portfolio</h2>
                             <i class="fa-solid fa-briefcase"></i>

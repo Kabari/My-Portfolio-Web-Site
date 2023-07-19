@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Portfolio Page
+{% endblock %}
+
+{% block content %}
+    <div class="portfolio">
+        <div class="portfolio-title">
+            <h1>My <span>Portfolio</span></h1>
+            <span class="subtitle">Works</span>
+        </div>
+    
+        <div class="portfolio-main">
+            <div class="portfolio-container">
+                <div class="portfolio-items">
+                    <div class="portfolio-item">
+                        <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <img src="/img/project-1.3cb250b1.jpg" alt="Portfolio">
+                            <div class="hover-content">
+                                <span class="content-title">MOCKUP PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item">
+                        <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <img src="/img/project-2.f5a228df.jpg" alt="Portfolio">
+                            <div class="hover-content">
+                                <span class="content-title">YOUTUBE PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item">
+                        <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <img src="/img/project-3.c1ae3f32.jpg" alt="Portfolio">
+                            <div class="hover-content">
+                                <span class="content-title">INSTAGRAM PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="project-details hidden" id="project1-details" hidden>
+                <!-- Project 1 details -->
+                <div class="project-info">
+                    <i class="fa fa-file-text-o pr-2"></i>
+                    <span class="project-label">Project:</span>
+                    <span class="project-value">Project 1</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-user-o pr-2"></i>
+                    <span class="project-label">Client:</span>
+                    <span class="project-value">Client 1</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-code pr-2"></i>
+                    <span class="project-label">Languages:</span>
+                    <span class="project-value">HTML, CSS</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-external-link pr-2"></i>
+                    <span class="project-label">Preview:</span>
+                    <a class="project-link" href="https://example.com/project1" target="_blank" rel="noreferrer">Project 1
+                        Preview</a>
+                </div>
+            </div>
+    
+            <div class="project-details hidden" id="project2-details" hidden>
+                <!-- Project 1 details -->
+                <div class="project-info">
+                    <i class="fa fa-file-text-o pr-2"></i>
+                    <span class="project-label">Project:</span>
+                    <span class="project-value">Project </span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-user-o pr-2"></i>
+                    <span class="project-label">Client:</span>
+                    <span class="project-value">Client 1</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-code pr-2"></i>
+                    <span class="project-label">Languages:</span>
+                    <span class="project-value">HTML, CSS</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-external-link pr-2"></i>
+                    <span class="project-label">Preview:</span>
+                    <a class="project-link" href="https://example.com/project1" target="_blank" rel="noreferrer">Project 1
+                        Preview</a>
+                </div>
+            </div>
+    
+            <div class="project-details hidden" id="project3-details" hidden>
+                <!-- Project 1 details -->
+                <div class="project-info">
+                    <i class="fa fa-file-text-o pr-2"></i>
+                    <span class="project-label">Project:</span>
+                    <span class="project-value">Project 3</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-user-o pr-2"></i>
+                    <span class="project-label">Client:</span>
+                    <span class="project-value">Client 1</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-code pr-2"></i>
+                    <span class="project-label">Languages:</span>
+                    <span class="project-value">HTML, CSS</span>
+                </div>
+                <div class="project-info">
+                    <i class="fa fa-external-link pr-2"></i>
+                    <span class="project-label">Preview:</span>
+                    <a class="project-link" href="https://example.com/project1" target="_blank" rel="noreferrer">Project 1
+                        Preview</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="/img/cancel.25908147.svg" alt="Close image">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal-inner">
+                            <figure>
+                                <figcaption>
+                                    <h3></h3>
+                                    <div class="project-details"></div>
+                                </figcaption>
+                                <img alt="Portfolio">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="script.js"></script> -->
+    
+    
+    <!-- <script src="script.js"></script> -->
+    
+    <script src="/js/index.js"></script>
+{% endblock %}

@@ -577,3 +577,172 @@ body {
 }
 
 /* Portfolio Page Styles End */
+
+/* Contact Page Styles */
+.contact-page {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contact-title span {
+    color: #007bff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.contact-description {
+    margin-top: 20px;
+    color: #555;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.contact-details {
+    margin-top: 30px;
+    color: #555;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-detail i {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.contact-detail span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-detail p {
+    margin: 0;
+    color: #555;
+}
+
+.contact-detail a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #0056b3;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.form-group .more-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group .more-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-group .more-btn h2 {
+    margin: 0;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-group .more-btn i {
+    font-size: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .form-group.flex-inputs input {
+        margin-right: 0;
+    }
+}
+
+/* Contact Page Styles End */

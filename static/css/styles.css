@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: grey;
+    background: #111;
 }
 
 
@@ -83,18 +83,18 @@ body {
 /* Home config start */
 .home-section {
     display: flex;
-    width: 1190px;
+    margin: 90px auto;
+    /* height: auto; */
+    width: 1440px;
     /* border: 1px solid red; */
     /* min-height: auto; */
 }
 
 .home-container {
     display: flex;
-    flex-wrap: nowrap;
-    column-gap: 50px;
-    margin: 50px 40px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* column-gap: 50px; */
+    margin: auto;
 }
 
 .image-box {
@@ -105,37 +105,66 @@ body {
 }
 
 .intro-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 540px;
-    height: 550px;
+    margin: auto 0 auto 100px;
+    /* margin-left: 100px; */
+    display: block;
+    width: 720px;
+    height: auto;
     /* border: 1px solid red; */
 }
 
-.intro-box .header-intro {
-    width: 540px;
-    height: 125px;
-    margin: 50px 0px 0px 0px;
-    padding-left: 70px;
+.header-intro {
+    width: auto;
     /* border: 1px solid red; */
+    margin-bottom: 20px;
 }
 
 .intro-box .header-intro h1 {
-    font-size: 51px;
-    line-height: 62px;
+    color: #007bff;
+    font-size: 62px;
     font-weight: 700;
-    margin: 18px 0 10px;
-    position: relative;
-    padding-left: 70px;
+    margin: 10px 0 10px;
 }
 
-.intro-box .header-info {
-    width: 540px;
-    height: 105px;
-    /* border: 1px solid red; */
+.intro-box .header-intro h1 span {
+    color: white;
+}
 
+.header-intro {
+    display: flex;
+    align-items: center;
+}
+
+.header-intro h1 {
+    position: relative;
+    padding-left: 60px
+}
+
+.header-intro h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 2px;
+    background-color: #007bff;
+    /* border: 1px solid red; */
+}
+
+.header-intro h1 {
+    /* display: flex; */
+    align-items: center;
+}
+
+
+.intro-box .header-info {
+    width: 650px;
+    height: auto;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
+    /* border: 1px solid red; */
 }
 
 .btn-con {
@@ -150,8 +179,8 @@ body {
 .more-btn {
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 60px;
     border-radius: 35px;
     outline: none;
     border: none;
@@ -163,8 +192,9 @@ body {
 }
 
 .more-info {
-    margin: auto 10px;
-    font-size: 13px;
+    margin: auto 0px auto 30px;
+    font-size: 15px;
+    font-weight: 700;
     text-transform: uppercase;
     /* border: 1px solid red; */
     width: 140px;
@@ -172,16 +202,16 @@ body {
 
 }
 
-.fa-search {
+.fa-arrow-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 30px;
     background-color: cornflowerblue;
     /* border: 1px solid black; */
-    font-size: 13px;
+    font-size: 20px;
 }
 
 /* About Config Start */

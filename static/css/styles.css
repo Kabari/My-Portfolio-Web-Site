@@ -399,3 +399,181 @@ body {
 }
 
 /* About Config End */
+
+/* Portfolio Page Styles */
+.portfolio {
+    padding: 40px;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.portfolio-title span {
+    font-size: 18px;
+    color: #666;
+}
+
+.portfolio-main {
+    background-color: #f5f5f5;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-card:hover .hover-content {
+    opacity: 1;
+}
+
+.hover-content span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: auto;
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-modal img {
+    width: 24px;
+    height: 24px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-inner figure {
+    margin: 0;
+}
+
+.modal-inner figcaption {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-inner h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-info i {
+    margin-right: 5px;
+}
+
+.project-info span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.project-value {
+    font-weight: normal;
+}
+
+.project-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Page Styles End */
